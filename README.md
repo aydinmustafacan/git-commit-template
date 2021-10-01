@@ -76,4 +76,13 @@ Type the below lines to it to make it open with your theme all the time
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme  ~/.mytheme.omp.json
 ```
+#### How to make sure your latest commit is also your branch head
+Will show you commit information
+```
+git log -1
+```
 
+Will change the your current commit head to latest commit head of the branch
+```
+git reset --hard
+```
