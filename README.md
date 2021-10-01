@@ -77,7 +77,7 @@ Import-Module oh-my-posh
 Set-PoshPrompt -Theme  ~/.mytheme.omp.json
 ```
 #### How to make sure your latest commit is also your branch head
-Will show you commit information
+Will show you current commit head information
 ```
 git log -1
 ```
