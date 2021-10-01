@@ -5,6 +5,7 @@
 > Create a git template 
 ```
 vim ~/.gitmessage.txt
+
 ```
 > Fill it with what you need. Example commit template below
 ```
