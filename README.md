@@ -87,3 +87,11 @@ Will change the your current commit head to latest commit head of the branch
 ```
 git reset --hard
 ```
+or
+```
+git checkout master
+```
+will tell your commit is ahead of origin/master then you can run
+```
+git push
+```
