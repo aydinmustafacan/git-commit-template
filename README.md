@@ -95,3 +95,7 @@ will tell your commit is ahead of origin/master then you can run
 ```
 git push
 ```
+
+#### Oh-my-zsh fast syntax highlighting
+
+[Syntax highlight](https://github.com/zdharma/fast-syntax-highlighting)
