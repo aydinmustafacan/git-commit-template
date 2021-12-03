@@ -99,3 +99,18 @@ git push
 #### Oh-my-zsh fast syntax highlighting
 
 [Syntax highlight](https://github.com/zdharma/fast-syntax-highlighting)
+
+
+#### Zsh Autocomplete
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Then add following lines to your .zshrc 
+```bash
+plugins=(git
+        dnf
+        zsh-autosuggestions
+        )
+```
