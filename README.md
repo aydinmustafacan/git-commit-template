@@ -98,6 +98,8 @@ git push
 
 #### Oh-my-zsh fast syntax highlighting
 
+Make sure you have installed the zsh terminal with oh-my-zsh
+
 [Syntax highlight](https://github.com/zdharma/fast-syntax-highlighting)
 
 
