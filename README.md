@@ -3,12 +3,12 @@
 #### Commit Template
 
 > Create a git template 
-```
+```zsh
 vim ~/.gitmessage.txt
 
 ```
 > Fill it with what you need. Example commit template below
-```
+```txt
 Subject line (try to keep under 50 characters)
 
 Multi-line description of commit,
@@ -26,7 +26,7 @@ feel free to be detailed.
 ```
 
 
-```
+```zsh
 git config --global commit.template ~/.gitmessage.txt
 ```
 Then typing git commit will open this template
@@ -34,18 +34,18 @@ Then typing git commit will open this template
 #### Autocorrect 
 
 This will make git to guess commands after 2 seconds
-```
+```zsh
 git config --global help.autocorrect 20
 ```
 
 
 #### Global Git Ignore
 Edit global gitignore file
-```
+```zsh
 vim ~/.gitignore_global
 ```
 Fill it with the file names that you want to be ignored all the time(Example below)
-```
+```.gitignore
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -53,10 +53,10 @@ Fill it with the file names that you want to be ignored all the time(Example bel
 *.so
 *.dylib
 
-# Test binary, build with `go test -c`
+# Test binary
 *.test
 
-# Output of the go coverage tool, specifically when used with LiteIDE
+# Output of 
 *.out
 /pact
 /pacts
@@ -99,20 +99,20 @@ Set-PoshPrompt -Theme  ~/.mytheme.omp.json
 ```
 #### How to make sure your latest commit is also your branch head
 Will show you current commit head information
-```
+```zsh
 git log -1
 ```
 
 Will change the your current commit head to latest commit head of the branch
-```
+```zsh
 git reset --hard
 ```
 or
-```
+```zsh
 git checkout master
 ```
 will tell your commit is ahead of origin/master then you can run
-```
+```zsh
 git push
 ```
 
@@ -125,12 +125,12 @@ Make sure you have installed the zsh terminal with oh-my-zsh
 
 #### Zsh Autocomplete
 
-```bash
+```zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 Then add following lines to your .zshrc 
-```bash
+```zsh
 plugins=(git
         dnf
         zsh-autosuggestions
@@ -138,9 +138,9 @@ plugins=(git
 ```
 
 #### How to change author information using git
-```bash
+```zsh
 git config --global user.name "John Doe"
 ```
-```bash
+```zsh
 git config --global user.email "john@doe.org"
 ```
