@@ -116,3 +116,11 @@ plugins=(git
         zsh-autosuggestions
         )
 ```
+
+#### How to change author information using git
+```bash
+git config --global user.name "John Doe"
+```
+```bash
+git config --global user.email "john@doe.org"
+```
