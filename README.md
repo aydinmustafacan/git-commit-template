@@ -46,9 +46,29 @@ vim ~/.gitignore_global
 ```
 Fill it with the file names that you want to be ignored all the time(Example below)
 ```
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+/pact
+/pacts
+log
+logs
 *~
 .*.swp
 .DS_Store
+```
+Then configure for it to be come into effect by the command below 
+```bash
+git config --global core.excludesFile '~/.gitignore_global'
 ```
 
 #### Oh-my-posh terminal for windows power shell
